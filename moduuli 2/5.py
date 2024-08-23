@@ -8,5 +8,4 @@ y = D * 32 * 13.3
 Z = I * 13.3 
 
 G = (x + y + Z) /1000
-
-print(round((G),2), "killo", round((G),5))
+print(G)
