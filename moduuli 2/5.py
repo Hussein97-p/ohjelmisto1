@@ -14,3 +14,5 @@ N = int(G // 1000)
 F = G % 1000
 print("Massa nykymittojen mukaan:")
 print(f"{N} kilogrammaa ja {F:.2f} grammaa.")
+
+
