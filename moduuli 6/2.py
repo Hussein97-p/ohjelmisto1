@@ -15,3 +15,5 @@ def i_do (y):
 
 y = int(input("Put the number you want: "))
 i_do (y)
+
+
