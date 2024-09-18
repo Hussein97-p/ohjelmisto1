@@ -13,18 +13,11 @@ conn = mysql.connector.connect(
 try:
     if conn.is_connected():
         print("Connected to the database.")
-
-
         icao_code = input("Please enter the ICAO code of the airport: ").strip()
-
-
         cursor = conn.cursor()
-
 
         query = "SELECT name, location FROM airport WHERE ident = %s"
         cursor.execute(query, (icao_code,))
-
-
         result = cursor.fetchone()
 
         if result:
@@ -40,3 +33,4 @@ finally:
         cursor.close()
         conn.close()
         print("Connection closed.")
+ 
