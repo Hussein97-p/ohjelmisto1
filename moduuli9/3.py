@@ -22,9 +22,11 @@ class Car:
 
         print(f"Current Speed: {car.current_speed} km/h") 
 
+    def go (car,Hours):
+        car.distance_traveled += car.current_speed * Hours
+        print(car.distance_traveled)
+
 
 mycar = Car(140)
-mycar.accelerate(30) 
-mycar.accelerate(70) 
-mycar.accelerate(50) 
-mycar.accelerate(-200)
+mycar.accelerate(60) 
+mycar.go(1.5)
