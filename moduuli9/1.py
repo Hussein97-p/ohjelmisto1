@@ -1,4 +1,9 @@
-from help import Auto
-Auto1 = Auto('ABC-123',142)
-#(rekisteritunnus,huippunopeus,tamanhetkinen_nopeus,kuljettu_matka)#
-print(Auto1.rekisteritunnus,Auto1.huippunopeus,Auto1.tamanhetkinen_nopeus,Auto1.kuljettu_matka)
+class Car:
+    def __init__(self,registration_number, top_speed, current_speed, distance_traveled):
+        self.registration_number = registration_number
+        self.top_speed = top_speed
+        self.current_speed = current_speed
+        self.distance_traveled = distance_traveled
+        
+
+my_self = Car("ABC-123",300,50,13)
