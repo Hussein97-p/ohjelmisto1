@@ -2,24 +2,24 @@ import random
 
 
 class Car:
-    def __init__(self, registration_number, top_speed):
-        self.registration_number = registration_number
-        self.top_speed = top_speed
-        self.current_speed = 0
-        self.distance_traveled = 0
+    def __init__(car, registration_number, top_speed):
+        car.registration_number = registration_number
+        car.top_speed = top_speed
+        car.current_speed = 0
+        car.distance_traveled = 0
 
 
-    def accelerate(self, speed_change):
-        new_speed = self.current_speed + speed_change
-        if new_speed > self.top_speed:
-            self.current_speed = self.top_speed
+    def accelerate(car, speed_change):
+        new_speed = car.current_speed + speed_change
+        if new_speed > car.top_speed:
+            car.current_speed = car.top_speed
         elif new_speed < 0:
-            self.current_speed = 0
+            car.current_speed = 0
         else:
-            self.current_speed = new_speed
+            car.current_speed = new_speed
 
-    def go(self, hours):
-        self.distance_traveled += self.current_speed * hours
+    def go(car, hours):
+        car.distance_traveled += car.current_speed * hours
 
 #------------------------------------------------------------------------
 cars = [Car(f"ABC-{i+1}", random.randint(100, 200)) for i in range(10)]
