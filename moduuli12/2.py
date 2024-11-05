@@ -42,7 +42,8 @@ print("2. Sign up for a free account if you don't have one.")
 print("3. After signing in, go to the 'API Keys' section in your account.")
 print("4. You will find your default API key, or you can generate a new one.")
 print("5. When prompted, enter your API key and the name of the city.")
-print("Try This If You Don't Have yet a Key >>>>9843f8ea3789d4a0b63a8617cf105114<<<")
+print("Try This If You Don't Have yet a Key You can use This >>>>9843f8ea3789d4a0b63a8617cf105114<<<")
+
 
 # Input city name and API key
 api_key = input("Enter your API key: ")  # Prompt user to enter their API key
