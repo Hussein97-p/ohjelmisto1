@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Last Project</title>
+    <style>
+        @font-face{
+            font-family: font1;
+            src: url(Fonts/Hunger\ Games.ttf);
+        }
+        body{
+            background-image:url(pics/1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        header{
+        background-color: rgb(255, 255, 255);
+        border: 2px solid black;
+        position: fixed;
+        width: 99%;
+        height: 6.95%;
+        z-index: 10;
+        }
+        .logo{
+            position: absolute;
+            top: -24%;
+            left: 65%;
+            color: rgb(212, 29, 8);
+            font-family: font1;
+        }
+
+        li{
+            list-style-type: none;
+            display: inline;
+        }
+        li a{
+            text-decoration: none;
+            margin-left: 3%;
+            margin-top: 5%;
+            padding: 1%;
+            transition: 1s;
+            color: black;
+        }
+        li a:hover{
+            background-color: rgb(238, 83, 6);
+        }
+        #Home{
+            color: green;
+            position: absolute;
+            height: 100%;
+            width: 99%;
+            top: 10%;
+        }
+        section{
+            position: absolute;
+            top: 10%;
+            left: 1%;
+            height: 40%;
+            width: 40%;
+            background-color: transparent;
+            color: rgb(199, 13, 13);
+            text-align: center;
+        }
+        iframe {
+        border: 2px solid rgb(49, 2, 237);       
+        border-radius: 10px;             
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        width:90%;
+        height:90%;
+        border-radius: 10px;
+        }
+        #pics{
+        position: absolute;
+        top: 58%;
+        left: 1%;
+        width: 97%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        }
+        .card1{
+        background-image: url(pics/card1.webp);
+        }
+        .card2{
+            background-image: url(pics/card2.jpeg); 
+        }
+        .card3{
+        background-image: url(pics/card3.jpeg);
+        }
+        .card4{
+        background-image: url(pics/card4.jpeg);
+        }
+        .card5{
+        background-image: url(pics/card5.jpeg);
+        }
+        .card6{
+        background-image: url(pics/card6.jpeg);
+        }
+        .card7{
+        background-image: url(pics/card7.webp);
+        }
+        .card8{
+        background-image: url(pics/card8.webp);
+        }
+        .card9{
+        background-image: url(pics/card9.jpeg);
+        }
+        .card10{
+        background-image: url(pics/card10.webp);
+        }
+
+        #pics div {
+        height: 285px;
+        width: 120px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        transition: width 1.7s ease;
+        background-size: cover;
+        background-position: center;
+        }
+        #pics div:hover {
+        width: 200px;
+        box-shadow: gainsboro;
+        }
+        .info{
+            color: rgb(246, 246, 246);
+            position: absolute;
+            border: 2px solid black;
+            height:40%;
+            width: 40%;
+            top: 15%;
+            left: 50%;
+            border-top-left-radius: 60px;
+            border-bottom-right-radius:60px;
+            text-align: center;
+        }
+
+        #Flight{
+            color: blue;
+            position: absolute;
+            top: 120%;
+            height: 100%;
+            width: 99%;
+            border: 2px solid black;
+        }
+        #Offers{
+            color: rgb(239, 0, 80);
+            position: absolute;
+            top: 230%;
+            height: 100%;
+            width: 99%;
+            border: 2px solid black;
+        }
+        #Aboutus{
+            color: rgb(9, 239, 151);
+            position: absolute;
+            top: 340%;
+            height: 100%;
+            width: 99%;
+            border: 2px solid black;
+        }
+        #Contact{
+            color: rgba(255, 0, 0, 0.579);
+            position: absolute;
+            top: 450%;
+            height: 100%;
+            width: 99%;
+            border: 2px solid black;
+        }
+
+        #Offers .img{
+        border: 1px solid black;
+        height: 80%;
+        width: 20%;
+        position: absolute;
+        left: 1%;
+        top: 15%;
+        background-image: url(pics/offersimg.jpeg);
+        }
+
+        #Offers .innfo{
+        color: black;
+        border: 1px solid black;
+        height: 80%;
+        background-color: white;
+        width: 20%;
+        position: absolute;
+        left: 25%;
+        top: 15%;
+        }
+        #Name{
+            text-align: center;
+            position: relative;
+            left: 20%;
+            padding: 10px;
+            width: 50%;
+        }
+        .Name{
+        position: relative;
+        left: 40%;
+        }
+        #email{
+            text-align: center;
+            position: relative;
+            left: 20%;
+            padding: 10px;
+            width: 50%;
+        }
+        .email{
+        position: relative;
+        left: 32%;
+        }
+        #button{
+            text-align: center;
+            position: relative;
+            width: 54%;
+            left: 21%;
+            transition: 1s;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        #button:hover{
+            display: block;
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div Id="Container">
+        <h1></h1>
+<header>
+<div class="logo">
+    <h1>Flight Trek</h1>
+</div>
+<ul>
+    <li><a href="#Home">| Home |</a></li>
+    <li><a href="#Flight">| Flight |</a></li>
+    <li><a href="#Offers">| Offers |</a></li>
+    <li><a href="#Aboutus">| About us |</a></li>
+    <li><a href="#Contact">| Contact |</a></li>
+</ul>
+</header> 
+<dev id="Home">
+<section>
+    <h2>Join us For a Tour Around The World ✈️</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d549772.0664455713!2d-3.1761366422940593!3d40.42899970286904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2z2YXYr9ix2YrYr9iMINil2LPYqNin2YbZitin!5e0!3m2!1sar!2sfi!4v1733070410090!5m2!1sar!2sfi"
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<div id="pics">
+    <div class="card1"></div>
+    <div class="card2"></div>
+    <div class="card3"></div>
+    <div class="card4"></div>
+    <div class="card5"></div>
+    <div class="card6"></div>
+    <div class="card7"></div>
+    <div class="card8"></div>
+    <div class="card9"></div>
+    <div class="card10"></div>
+</div>
+<div class="info">
+<pre>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quis sed perspiciatis ipsa magni dolorum facilis,
+    numquam dolor,
+    vitae dicta praesentium temporibus eius 
+    mollitia ducimus odio sit error labore delectus
+    corporis porro nostrum hic, iure accusamus ad? 
+    Obcaecati accusantium officiis possimus
+    numquam rem quisquam. Dolorem omnis
+    repudiandae veniam doloribus quis repellat
+    ab possimus voluptatem quaerat saepe laborum 
+    minima aspernatur similique dolores deserunt
+    harum nam maiores distinctio hic nisi explicabo!
+    Eligendi laudantium maxime possimus est
+    distinctio qui, cumque veritatis molestias
+    adipisci quos non ipsam! Eligendi,
+    ut laboriosam harum architecto voluptatum in natus
+    ea aperiam ad et voluptate aliquam
+    nam veniam laborum vel, mollitia fugiat libero
+</pre>
+</div>
+</dev>
+
+<dev id="Flight">
+    here is the Flight page
+</dev>
+
+<dev id="Offers">
+    <dev class="img">
+    </dev>
+    <dev class="innfo">
+    <p align="center">Lorem  Lorem, ipsum dolor.ipsum dolor sit amet.</p>
+    <p align="center">Lorem  Lorem, ipsum dolor.ipsum dolor sit amet.</p>
+    <p align="center">Lorem  Lorem, ipsum dolor.ipsum dolor sit amet.</p>
+    <p align="center">Lorem  Lorem, ipsum dolor.ipsum dolor sit amet.</p>
+    <p align="center">Lorem  Lorem, ipsum dolor.ipsum dolor sit amet.</p>
+    <label for="Name" class="Name">Name</label>
+    <br>
+    <br>
+    <input type="text" id="Name" placeholder="Your Name" required>
+    <br>
+    <br>
+    <label for="email" class="email" >E-mail Address</label>
+    <br>
+    <br>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <br>
+    <br>
+    <br>
+    <input type="submit" id="button" submit="submit" >
+    </dev>
+</dev>
+
+<dev id="Aboutus">
+    here is the About us page
+</dev>
+
+<dev id="Contact">
+    here is the Contact page
+</dev>
+
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>
